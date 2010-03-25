@@ -41,3 +41,5 @@ require_recipe 'postgres'
 
 #uncomment to run the exim::auth recipe
 #require_recipe "exim::auth"
+
+require_recipe "adealio:update_timezone"
