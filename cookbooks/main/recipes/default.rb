@@ -42,4 +42,4 @@
 #uncomment to run the exim::auth recipe
 #require_recipe "exim::auth"
 
-require_recipe "adealio"
+#require_recipe "adealio"
