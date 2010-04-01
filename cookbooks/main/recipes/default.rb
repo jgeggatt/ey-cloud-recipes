@@ -4,6 +4,7 @@
 #  }
 #end
 
+# uncomment if you want to run postgres recipe
 #require_recipe 'postgres'
 
 # uncomment if you want to run couchdb recipe
@@ -12,11 +13,8 @@
 # uncomment to turn use the MBARI ruby patches for decreased memory usage and better thread/continuationi performance
 # require_recipe "mbari-ruby"
 
-# uncomment to turn on thinking sphinx 
-# require_recipe "thinking_sphinx"
-
-# uncomment to turn on ultrasphinx 
-# require_recipe "ultrasphinx"
+# uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
+# require_recipe "sphinx"
 
 #uncomment to turn on memcached
 # require_recipe "memcached"
@@ -42,4 +40,6 @@
 #uncomment to run the exim::auth recipe
 #require_recipe "exim::auth"
 
-#require_recipe "adealio"
+require_recipe "ntp"
+
+require_recipe "adealio"
