@@ -40,6 +40,6 @@
 #uncomment to run the exim::auth recipe
 #require_recipe "exim::auth"
 
-require_recipe "ntp"
+#require_recipe "ntp"
 
 require_recipe "adealio"
